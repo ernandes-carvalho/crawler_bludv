@@ -8,7 +8,7 @@ class Bludv(scrapy.Spider):
     name = 'bludv_2'
 
     def start_requests(self):
-        for x in range(1, 15):
+        for x in range(1, 55):
             yield scrapy.Request(url='https://www.bludv.tv/page/' + str(x), callback=self.parse)
 
     def parse(self, response):
