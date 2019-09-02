@@ -26,6 +26,7 @@ class Bludv(scrapy.Spider):
                 'div.content a.more-link::attr("href")').extract_first()
             img = post.css(
                 'div.content div.separator img::attr("src")').extract_first()
+				
 
             arr.append({
                 'title': title,
